@@ -33,11 +33,11 @@ public class playerMovement : MonoBehaviour
             
         }
 
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d") || Input.GetKey("right"))
         {
             rb.AddForce(sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") || Input.GetKey("left"))
         {
             rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
