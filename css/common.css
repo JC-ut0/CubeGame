@@ -25,6 +25,9 @@ body{
 	background-color: black;
 	padding: 10px;
 }
+#wrapper .nav{
+	overflow: auto;
+}
 #wrapper .nav a{
 	background-color: royalblue;
 	font-size: 17px;
